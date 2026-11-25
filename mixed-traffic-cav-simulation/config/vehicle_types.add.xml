@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <!-- Conventional human-driven vehicle proxy. -->
+    <vType id="HDV"
+           vClass="passenger"
+           carFollowModel="Krauss"
+           accel="2.6"
+           decel="4.5"
+           emergencyDecel="9.0"
+           tau="1.5"
+           minGap="2.5"
+           length="5.0"
+           maxSpeed="13.89"
+           speedFactor="1.0"
+           speedDev="0.10"
+           sigma="0.5"/>
+
+    <!-- Simplified CAV proxy using IDM and tighter speed compliance.
+         This does not represent V2V communication or platooning. -->
+    <vType id="CAV"
+           vClass="passenger"
+           carFollowModel="IDM"
+           accel="2.6"
+           decel="4.5"
+           emergencyDecel="9.0"
+           tau="0.6"
+           minGap="2.5"
+           length="5.0"
+           maxSpeed="13.89"
+           speedFactor="1.0"
+           speedDev="0.0"
+           sigma="0.0"/>
+</additional>
