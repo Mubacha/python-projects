@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local SUMO network exports and large generated files
+network/osm/*
+!network/osm/.gitkeep
+
+# Simulation outputs
+results/raw/
+results/*.csv
+!results/.gitkeep
+figures/*.png
+!figures/.gitkeep
+
+# SUMO temporary/log files
+*.log
+*.netccfg
+*.rou.alt.xml
